@@ -11,12 +11,11 @@
 
 using namespace sf;
 
-HexMap::HexMap(MapType type, Vector2i size, Vector2f coordinateCenter, int hexSize, std::string text){
+HexMap::HexMap(MapType type, Vector2i size, Vector2f coordinateCenter, int hexSize){
     this->type = type;
     this->size = size;
     this->coordinateCenter = coordinateCenter;
     this->hexSize = hexSize;
-    this->text = text;
     Hex *temp;
 
     hexFont.loadFromFile("arial.ttf");
@@ -69,12 +68,11 @@ HexMap::HexMap(MapType type, Vector2i size, Vector2f coordinateCenter, int hexSi
     delete temp;
 }
 
-HexMap::HexMap(int radius, Vector2f coordinateCenter, int hexSize, std::string text){
+HexMap::HexMap(int radius, Vector2f coordinateCenter, int hexSize){
     this->type = HexMap::Hexagon;
     this->radius = radius;
     this->coordinateCenter = coordinateCenter;
     this->hexSize = hexSize;
-    this->text = text;
     Hex *temp;
 
     hexFont.loadFromFile("arial.ttf");

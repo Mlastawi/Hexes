@@ -421,3 +421,50 @@
 1428069306 f:\github\hexes\myheader.h
 	<iostream>
 
+1428079661 source:f:\github\hexes\hex.cpp
+	"hex.h"
+	<cmath>
+	<iostream>
+	"myHeader.h"
+
+1428079845 f:\github\hexes\hex.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<iostream>
+
+1428075464 source:f:\github\hexes\main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<cmath>
+	<iostream>
+	"myHeader.h"
+	"hex.h"
+	"hexmap.h"
+	<climits>
+	"player.h"
+	<ctime>
+
+1428079396 f:\github\hexes\hexmap.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<string>
+
+1428079467 f:\github\hexes\player.h
+	<SFML/Graphics.hpp>
+
+1428071529 source:f:\github\hexes\player.cpp
+	"player.h"
+	<SFML/Graphics.hpp>
+
+1428079044 source:f:\github\hexes\hexmap.cpp
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<cmath>
+	<string>
+	<algorithm>
+	<iostream>
+	"hex.h"
+	"hexmap.h"
+	<ctime>
+	<climits>
+

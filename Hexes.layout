@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug" />
+	<ActiveTarget name="Release" />
+	<File name="player.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="241" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hex.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="701" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="hex.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1577" topLine="1" />
+		</Cursor>
+	</File>
 	<File name="hexmap.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="111" topLine="6" />
@@ -13,7 +28,7 @@
 	</File>
 	<File name="hexmap.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6801" topLine="45" />
+			<Cursor1 position="6801" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="13" />
@@ -27,6 +42,8 @@
 			<Collapse line="171" />
 			<Collapse line="184" />
 			<Collapse line="218" />
+			<Collapse line="241" />
+			<Collapse line="273" />
 		</Folding>
 	</File>
 	<File name="myHeader.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -39,24 +56,9 @@
 			<Cursor1 position="231" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="player.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="241" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="myHeader.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="309" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="hex.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="701" topLine="12" />
-		</Cursor>
-	</File>
-	<File name="hex.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1577" topLine="1" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

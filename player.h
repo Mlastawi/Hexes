@@ -6,12 +6,12 @@
 using namespace sf;
 
 class Player{
-    static unsigned char playerCount;
-    unsigned const char ID;
-    Color playerColor;
-    Color pickedColor;
-    bool first;
-    int hexCount;
+    static unsigned char playerCount; //ilosc graczy
+    unsigned const char ID; //id gracza
+    Color playerColor; //kolor gracza
+    Color pickedColor; //kolor wybranego gracza
+    bool first; //czy postawiono juz pierwszego hexa
+    int hexCount; //ilosc posiadanych hexow
 
 public:
     Player( Color = Color::Transparent );

@@ -5,8 +5,6 @@
 
 using namespace sf;
 
-bool Hex::first[2] = {true, true};
-int Hex::count[2] = {0, 0};
 bool Hex::any_picked = false;
 
 const Color LightRed( 255, 128, 128 );
@@ -113,13 +111,6 @@ Vector2i* Hex::getNeighbors(){
     return neighbors;
 }
 
-bool Hex::isFirst(HexColor which){
-    return first[which];
-}
-void Hex::setFirst(bool setter, HexColor which){
-    first[which] = setter;
-}
-
 void Hex::pick(){
     picked = true;
     any_picked = true;
@@ -141,17 +132,6 @@ void Hex::unpickAll(){
 }
 bool Hex::isPicked(){
     return picked;
-}
-
-void Hex::increaseCount(HexColor which){
-    count[which]++;
-}
-void Hex::decreaseCount(HexColor which){
-    count[which]--;
-    if(count[which]==0) first[which]=true;
-}
-int Hex::getCount(HexColor which){
-    return count[which];
 }
 
 void Hex::increaseStrength(int amount){

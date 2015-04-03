@@ -13,15 +13,14 @@ public:
     enum HexColor{Red=0, Blue=1};
 
 private:
-    static bool first[2];
-    static int count[2];
+   // static bool first[2];
     static bool any_picked;
 
     HexType type;
     Vector2f center; //srodek HEXa
     int size; //odleglosc wierzcholka od srodka
-    Color color;
-    Color center_color;
+    Color color; //kolor hexa
+    Color center_color; //kolor srodka hexa
     VertexArray shape; //tablica punktów
     VertexArray border; //ramka
     Vector2i coordinates; //wspolzedne w ukladzie osiowym
@@ -29,45 +28,43 @@ private:
     Vector2i neighbors[6]; //tablica ze wspolrzednymi sasiadow
     bool picked; //czy wybrany
 
-    int strength;
-    Font* font;
-    Text textToDisplay;
+    int strength; //sila pola
+    Font* font; //czcionka hexa
+    Text textToDisplay; //tekst na hexie
 
 public:
     Hex(HexType=Hex::Flat, Vector2f= Vector2f(0,0), int = 30, Vector2i=Vector2i(0,0), Color = Color::White, Color = Color::White, bool = true);
 
     Vector2i getCoords() const; //zwraca koordynaty w ukladzie osiowym
     Vector2f getCenter() const; //zwraca x,y srodka
-    void setColor(Color);
-    void setCenterColor(Color);
-    Color getColor() const;
-    void enable();
-    void disable();
-    bool isEnabled() const;
-    bool isNeighbor(const Hex&) const;
-    Vector2i* getNeighbors();
-    void pick();
-    void unpick();
-    bool isPicked();
 
-    void increaseStrength(int=1);
-    void decreaseStrength(int=1);
-    int getStrength() const;
-    void setStrength(int);
+    void setColor(Color); //ustawia kolor hexa
+    void setCenterColor(Color); //ustawia kolor srodka hexa
+    Color getColor() const; //zwraca kolor hexa
 
-    void setFont(Font* const);
+    void enable(); //uaktywnij
+    void disable(); //zdezaktywuj
+    bool isEnabled() const; //czy jest aktywny
 
-    static void unpickAll();
-    static bool isFirst(HexColor);
-    static void setFirst(bool, HexColor);
-    static void increaseCount(HexColor);
-    static void decreaseCount(HexColor);
-    static int getCount(HexColor);
+    bool isNeighbor(const Hex&) const; //czy sasiaduje
+    Vector2i* getNeighbors(); //zwraca sasiadow
+
+    void pick(); //zaznacz
+    void unpick(); //odznacz
+    bool isPicked(); //czy zaznaczony
+    static void unpickAll(); //odznacz wszystko - chyba nieuzywane
+
+    void increaseStrength(int=1); //zwieksz sile o (domyslnie 1)
+    void decreaseStrength(int=1); //zmniejsz sile o (domyslnie 1)
+    int getStrength() const; //pobierz sile
+    void setStrength(int); //ustaw sile na
+
+    void setFont(Font* const); //ustaw czcionke pola
 
 private:
     virtual void draw(RenderTarget&, RenderStates) const; //sluzy do rysowania
-    void changeText(std::string);
-    void changeText(int);
+    void changeText(std::string); //zmien tekst pola
+    void changeText(int); //zmien tekst pola
 
 };
 
